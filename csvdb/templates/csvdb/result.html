@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      {% extends 'base.html' %} {% block content %} {% for message in messages%}
+      {{ message }} {% endfor %}
+      <h1>Result Page</h1>
+
+      {% if pie %}
+      <h2>Pie Chart</h2>
+      {% load static %}
+      <img src="{% static pie %}" alt="Pie Chart" width="1200" height="400" />
+      {% endif %} {% if bar %}
+      <h2>Bar Chart</h2>
+      {% load static %}
+      <img src="{% static bar %}" alt="Bar Chart" width="800" height="400" />
+      {% endif %}
+
+      <br />
+      <a href="{% url 'home' %}">Upload another file</a>
+      {% endblock content %}
+    </section>
+  </body>
+</html>
