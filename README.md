@@ -1,4 +1,4 @@
-# Accuknox Project URL Configuration
+# Accuknox Internship Project Configuration
 
 #Note that the project is already configured, the model is migrated and sqlite database has the data for all three apps, books, data visualization and students form.
 Welcome to the Accuknox Internship project configuration documentation. This Django project is organized into three distinct apps: Books, CSVDB, and Students, each serving a specific purpose within the project.
