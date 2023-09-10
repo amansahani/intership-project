@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block content %}
+<h2>{{ book.title }}</h2>
+<p>Author: {{ book.author }}</p>
+<p>Year: {{ book.year }}</p>
+<p>Publisher: {{ book.publisher }}</p>
+<p>ISBN: {{ book.isbn }}</p>
+
+<img src="{{ book.img_url1 }}" alt="{{ book.title }}" />
+
+<a href="{% url 'books' %}">Back to Search</a>
+{% endblock %}
