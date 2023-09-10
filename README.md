@@ -14,13 +14,6 @@ The main `urlpatterns` list in the project's `urls.py` file includes various URL
 
 This URL pattern maps to the home view of the entire project.
 
-### Admin
-
-- URL Pattern: `'admin/'`
-- View: `admin.site.urls`
-
-This URL pattern is used for the Django admin panel.
-
 ### Books
 
 The Books app retrieves data of books from an SQLite database using a subset of the [Books Dataset](https://www.kaggle.com/datasets/saurabhbagchi/books-dataset) available on Kaggle. It provides a search functionality using a search bar.
@@ -33,6 +26,8 @@ This URL pattern includes the URL patterns defined in the `books` app.
 ### CSVDB
 
 The CSVDB app allows users to input CSV files containing student marks and provides visualizations of statistics based on the data. It uses the [Students Marksheet Dataset](https://www.kaggle.com/datasets/rohithmahadevan/students-marksheet-dataset) available on Kaggle.
+
+**Please Note: To get statistics, use only the "marksheet.csv" file present inside the main/parent root folder of the project when uploading data on the CSVDB pages.**
 
 - URL Pattern: `'csvdb/'`
 - View: `include('csvdb.urls')`
