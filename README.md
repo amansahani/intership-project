@@ -1,5 +1,6 @@
 # Accuknox Project URL Configuration
 
+#Note that the project is already configured, the model is migrated and sqlite database has the data for all three apps, books, data visualization and students form.
 Welcome to the Accuknox Internship project configuration documentation. This Django project is organized into three distinct apps: Books, CSVDB, and Students, each serving a specific purpose within the project.
 
 ## Main URLs Configuration
@@ -27,7 +28,7 @@ This URL pattern includes the URL patterns defined in the `books` app.
 
 The CSVDB app allows users to input CSV files containing student marks and provides visualizations of statistics based on the data. It uses the [Students Marksheet Dataset](https://www.kaggle.com/datasets/rohithmahadevan/students-marksheet-dataset) available on Kaggle.
 
-**<span style="color:#ff5733; font-size: 18px;">Please Note: To get statistics, use only the "marksheet.csv" file present inside the main/parent root folder of the project when uploading data on the CSVDB pages.</span>**
+**<span style="color:#007aff; font-size: 25px;">Please Note: To get statistics, use only the "marksheet.csv" file present inside the main/parent root folder of the project when uploading data on the CSVDB pages.</span>**
 
 - URL Pattern: `'csvdb/'`
 - View: `include('csvdb.urls')`
