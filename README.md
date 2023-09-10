@@ -1,12 +1,6 @@
 # Accuknox Project URL Configuration
 
-Welcome to the Accuknox project URL configuration documentation. This Django project is organized into three distinct apps: Books, CSVDB, and Students, each serving a specific purpose within the project.
-
-## Overview
-
-In Django, the `urlpatterns` list is used to route URLs to views. This configuration determines how different parts of your web application respond to specific URL patterns. Below, we outline the main URL patterns for the entire project and provide a brief overview of each app.
-
-For more detailed information about URL routing in Django, please refer to the [official Django documentation on URL routing](https://docs.djangoproject.com/en/4.2/topics/http/urls/).
+Welcome to the Accuknox Internship project configuration documentation. This Django project is organized into three distinct apps: Books, CSVDB, and Students, each serving a specific purpose within the project.
 
 ## Main URLs Configuration
 
@@ -78,14 +72,8 @@ This URL pattern is used to display detailed information about a specific book.
 
 In the `csvdb` app, various URL patterns are defined for handling CSV data and statistics visualization.
 
-_[Please provide specific details of URL patterns and views related to the CSVDB app]_
-
 ## Students App URLs
 
 In the `students` app, various URL patterns are defined for managing student records.
 
-_[Please provide specific details of URL patterns and views related to the Students app]_
-
-This concludes the documentation for the URL configuration of the Accuknox project. For more detailed information on each app's specific views and functionality, please refer to the respective app's documentation.
-
-For additional information about the project's implementation and usage, please consult the project's main documentation.
+This concludes the documentation for the URL configuration of the Accuknox project.
