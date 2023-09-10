@@ -20,8 +20,8 @@ def visualize(filename):
     plt.xticks(rotation=45, ha='right')
     plt.legend()
     plt.tight_layout()
-
-    plt.show()
+    
+    plt.savefig(os.path.join(f"{os.path.dirname(__file__)}", os.pardir, f"{filename}-bar.png"))
 
 
     gender_average = data.groupby('Gender')['Average_Score'].mean()
@@ -48,7 +48,7 @@ def visualize(filename):
 
     # Display the pie charts
     plt.tight_layout()
-    plt.show()
+    plt.savefig(os.path.join(f"{os.path.dirname(__file__)}", os.pardir, f"{filename}-pie.png"), pad_inches=0.4, bbox_inches='tight', dpi=300)
 
 
 
